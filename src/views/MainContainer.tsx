@@ -1,4 +1,6 @@
 import { Box, Button } from "@mui/material";
+
+import PlayButton from "./PlayButton";
 import React from "react";
 
 const MainContainer = () => {
@@ -17,12 +19,23 @@ const MainContainer = () => {
   };
   return (
     <Box>
-      <Button name={clip1} onClick={playClipAny}>
+      <PlayButton fileLocation={clip1} buttonLabel="Rifle Shot" />
+      {/* <Button
+        variant="contained"
+        size="large"
+        style={{
+          backgroundColor: "green",
+          borderRadius: 10,
+          margin: "1em",
+        }}
+        name={clip1}
+        onClick={playClipAny}
+      >
         SFX 1
       </Button>
       <Button name={clip2} onClick={playClipAny}>
         SFX 2
-      </Button>
+      </Button> */}
     </Box>
   );
 };
