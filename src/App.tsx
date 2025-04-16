@@ -1,5 +1,3 @@
-import React from "react";
-import logo from "./logo.svg";
 import MainContainer from "./views/MainContainer";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
